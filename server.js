@@ -5,7 +5,7 @@ const app=express();
 const port=process.env.PORT || 8080;
 app.get("/",async(req,res)=>{
     return res.status(200).json({
-        message:"Server is running and this is the new Version v2."
+        message:"Server is running and this is the new Version v3."
     })
 })
 app.listen(port,()=>{
