@@ -1,9 +1,14 @@
-FROM node
+
+FROM node:26
+
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
 COPY . .
-CMD ["node","server.js"]
+
+EXPOSE 8080
+
+CMD ["node", "server.js"]
